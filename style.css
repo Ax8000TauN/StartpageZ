@@ -1,0 +1,146 @@
+* {
+  font-family: 'Roboto', 'KFhimaji';
+}
+
+html,
+body {
+  background-color: #fff;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#container {
+  /* MAIN CONTAINER */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: inherit;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#message {
+  color: #fff;
+  font-size: 56pt;
+  font-family: 'Font Awesome 5 Free Solid';
+  font-weight: bold;
+  height: 50px;
+  width: 50%;
+  letter-spacing: 0.5px;
+  line-height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  text-align: center;
+  display: none;
+}
+
+#nav {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  /* SIDEBAR */
+  width: 20%;
+  height: 100%;
+  background: #272727;
+  opacity: .9;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(calc(-120%));
+}
+
+#border {
+  /* SIDEBAR BORDER */
+  z-index: 99;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 50px;
+  padding-top: 20%;
+  opacity: 1;
+}
+
+#border:hover + .sidebar,
+.sidebar:hover {
+  transform: translateX(0);
+}
+
+.box {
+  /* SIDEBAR BOX LINK */
+  padding-top: 45%;
+  padding-right: 30px;
+}
+
+.box a {
+  color: #fff;
+  font-family: 'Roboto';
+  font-size: 12pt;
+  line-height: 30px;
+  text-align: right;
+  text-decoration: none;
+  display: block;
+  transition: all 0.3s ease-in-out;
+}
+
+.box a:hover {
+  color: inherit;
+}
+
+.box h1 {
+  color: #999;
+  font-family: 'Bebas Neue';
+  text-align: right;
+}
+
+.button {
+  /* SIDEBAR BUTTONS */
+  background: transparent;
+  border: none;
+  color: #000;
+  font-family: 'Bebas Neue';
+  font-size: 1em;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button.active {
+  background: #000 !important;
+  color: #fff !important;
+}
+
+#first-btn {
+  padding: 17px 15px;
+  top: 10px;
+}
+
+#second-btn {
+  padding: 17px 14px;
+  top: 62px;
+}
+
+#third-btn {
+  padding: 17px 14px;
+  top: 114px;
+}
+
+#fourth-btn {
+  padding: 17px 14px;
+  top: 150px;
+}
+
+#click-btn:active .sidebar {
+  margin-left: 0;
+}
